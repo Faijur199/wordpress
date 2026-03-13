@@ -11,7 +11,7 @@
             <div style="background: #e8f5e9; padding: 20px; border-radius: 4px; border: 1px solid #c8e6c9; text-align: center; margin-bottom: 30px;">
                 <h3 style="color: #2e7d32; margin-bottom: 10px;">Order Placed Successfully!</h3>
                 <p>Thank you for shopping with Hemp House Nepal. We will contact you shortly.</p>
-                <a href="/" class="btn" style="margin-top: 20px;">Back to Shop</a>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="btn" style="margin-top: 20px;">Back to Shop</a>
             </div>
             <?php $_SESSION['cart'] = []; ?>
         <?php else : ?>

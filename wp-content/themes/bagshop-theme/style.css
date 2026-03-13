@@ -107,13 +107,15 @@ img {
   gap: 20px;
 }
 
-/* Hero Section */
-.hero {
+/* Hero Slider */
+.hero-slider {
   height: 80vh;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("https://hemphousenepal.com.np/wp-content/uploads/2022/01/boudha-1.jpg")
-      center/cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero {
+  height: 100%;
   display: flex;
   align-items: center;
   color: var(--white);
@@ -121,25 +123,116 @@ img {
 }
 
 .hero-content h2 {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   margin-bottom: 20px;
   text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hero-content {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease 0.3s;
+  width: 100%;
+}
+
+.hero-logo-circle {
+  width: 120px;
+  height: 120px;
+  background: var(--white);
+  border-radius: 50%;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero-logo {
+  width: 85%;
+  height: auto;
+  filter: none; /* Keep original logo colors in the circle */
+}
+
+.site-logo {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+.hero-logo {
+  height: 80px;
+  width: auto;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1); /* Make it white on dark BG */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  opacity: 0.9;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 30px;
+  padding: 12px 35px;
   background-color: var(--primary-color);
   color: var(--white);
   border-radius: 4px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
   background-color: #e06e65;
   transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(248, 131, 121, 0.3);
+}
+
+/* Swiper Customize */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  backdrop-filter: blur(5px);
+  transition: var(--transition);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: var(--primary-color);
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: var(--white);
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--primary-color);
+  width: 30px;
+  border-radius: 6px;
 }
 
 /* Features */

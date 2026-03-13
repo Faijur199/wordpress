@@ -1,5 +1,4 @@
 </main>
-
 <footer class="site-footer">
     <div class="container footer-grid">
         <!-- Column 1: Logo and Bio -->
@@ -22,8 +21,8 @@
                 <li><a href="#">Contact Us</a></li>
             </ul>
             <div class="footer-contact-info">
-                <p>Address: Mid-Baneshwor, Kathmandu</p>
-                <p>Mobile: 9805672420</p>
+                <p>Address: Jyatha, Thamel</p>
+                <p>Mobile: 9803329786</p>
             </div>
         </div>
         
@@ -58,7 +57,7 @@
 </footer>
 
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/9779800000000" class="whatsapp-float" target="_blank">
+<a href="https://wa.me/9779823420616" class="whatsapp-float" target="_blank">
     <i class="dashicons dashicons-whatsapp"></i>
     <span>Chat with us</span>
 </a>
